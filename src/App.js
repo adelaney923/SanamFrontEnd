@@ -1,5 +1,6 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
+import NavBar from './Components/NavBar';
 import LandingPage from './Components/LandingPage';
 import AboutMe from './Components/AboutMe';
 import WorkingTogether from './Components/WorkingTogether';
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Sonnys website!</h1>
+        <NavBar />
         <LandingPage />
         <AboutMe />
         <WorkingTogether />

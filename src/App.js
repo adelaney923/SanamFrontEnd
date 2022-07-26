@@ -12,11 +12,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <LandingPage />
-        <AboutMe />
-        <WorkingTogether />
-        <CoachingOptions />
-        <ApplyForCoaching />
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/aboutSanam" element={<AboutMe />} />
+          <Route exact path="/workingTogether" element={<WorkingTogether />} />
+          <Route exact path="/coachingOptions" element={<CoachingOptions />} />
+          <Route exact path="/applyforcoaching" element={<ApplyForCoaching />} />
+          
+        </Routes>
       </header>
     </div>
   );

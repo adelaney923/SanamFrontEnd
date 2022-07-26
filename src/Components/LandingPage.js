@@ -3,7 +3,8 @@ import React from "react";
 const LandingPage = () => {
   return (
     <div id="landing">
-      <h2>landing</h2>
+      {/* <img /> */}
+      <p>"GIVEN HALF A CHANCE, THE BODY WILL HEAL ITSELF BY ITSELF"</p>
     </div>
   );
 };

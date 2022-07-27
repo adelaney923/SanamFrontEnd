@@ -1,11 +1,11 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
-import NavBar from './Components/NavBar';
-import LandingPage from './Components/LandingPage';
-import AboutMe from './Components/AboutMe';
-import WorkingTogether from './Components/WorkingTogether';
-import CoachingOptions from './Components/CoachingOptions';
-import ApplyForCoaching from './Components/ApplyForCoaching';
+import NavBar from './Components/NavBar/NavBar';
+import LandingPage from './Components/LandingPage/LandingPage';
+import AboutMe from './Components/AboutMe/AboutMe';
+import WorkingTogether from './Components/WorkingTogether/WorkingTogether';
+import CoachingOptions from './Components/CoachingOptions/CoachingOptions';
+import ApplyForCoaching from './Components/ApplyForCoaching/ApplyForCoaching';
 
 function App() {
   return (

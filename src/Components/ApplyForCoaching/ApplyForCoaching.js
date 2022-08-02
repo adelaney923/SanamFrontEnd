@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { PopupWidget } from "react-calendly";
 
 const ApplyForCoaching = () => {
   const form = useRef();
@@ -27,33 +28,42 @@ const ApplyForCoaching = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" value={contact_number} />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Phone Number</label>
-      <input type="tel" name="user_phone" pattern="[0-9]{10}" />
-      <label>What is your BIGGEST health goal?</label>
-      <textarea name="health_goal" />
-      <label>Why do you think you haven't hit the above goals yet?</label>
-      <textarea name="obstacle" />
-      <label>
-        Are there any specific reasons why you would like to work with us?
-      </label>
-      <textarea name="why_us" />
-      <label>
-        On a scale of 1-10 (low to high), how comitted are you to achieving your
-        goals?
-      </label>
-      <input type="text" name="commitment_level" />
-      <label>
-        How did you hear about us?
-      </label>
-      <input type="text" name="hear_about_us" />
-      <input type="submit" value="Send" />
-    </form>
+    <div id="apply for coaching">
+      <form ref={form} onSubmit={sendEmail}>
+        <input type="hidden" name="contact_number" value={contact_number} />
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Phone Number</label>
+        <input type="tel" name="user_phone" pattern="[0-9]{10}" />
+        <label>What is your BIGGEST health goal?</label>
+        <textarea name="health_goal" />
+        <label>Why do you think you haven't hit the above goals yet?</label>
+        <textarea name="obstacle" />
+        <label>
+          Are there any specific reasons why you would like to work with us?
+        </label>
+        <textarea name="why_us" />
+        <label>
+          On a scale of 1-10 (low to high), how comitted are you to achieving
+          your goals?
+        </label>
+        <input type="text" name="commitment_level" />
+        <label>How did you hear about us?</label>
+        <input type="text" name="hear_about_us" />
+        <input type="submit" value="Send" />
+      </form>
+
+      {/* <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/soulshinehealthcoaching', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true })}</script> */}
+
+      <PopupWidget
+        url="https://calendly.com/soulshinehealthcoaching"
+        rootElement={document.getElementById("root")}
+      />
+    </div>
   );
 };
 

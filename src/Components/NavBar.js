@@ -4,12 +4,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import "./Mobile.css"
 
 
 const NavBar = () => {
   return (
-    <div id="landing">
-      <Navbar bg="light" expand="md" className="mb-3" fixed="top">
+    <div id="navbar">
+      <Navbar expand="md" className="mb-3" fixed="top">
         <Container fluid>
           <Navbar.Brand href="#">Soulshine.</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />

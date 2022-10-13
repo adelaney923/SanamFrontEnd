@@ -3,16 +3,22 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-#landing, .landingquote {
-  background-color: #FFE599;
-}
-
 .landingimg {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     object-fit: cover;
+    margin-top: 80px;
 }
-
-.mb-3 {
-  color: #FFE599
+.container {
+  position: relative;
+}
+.quotecontainer {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 90%;
+  bottom: 0;
+  right: 15%;
+  color: white;
+  text-align: center;
 }

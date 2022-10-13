@@ -1,6 +1,6 @@
 import '../src/Components/Mobile.css';
 import { Route, Routes } from "react-router-dom";
-import NavBar from './Components/NavBar';
+import NavBar from './Components/Navigation/NavBar';
 import LandingPage from './Components/LandingPage';
 import AboutMe from './Components/AboutMe';
 import WorkingTogether from './Components/WorkingTogether';
@@ -18,7 +18,6 @@ function App() {
           <Route exact path="/workingTogether" element={<WorkingTogether />} />
           <Route exact path="/coachingOptions" element={<CoachingOptions />} />
           <Route exact path="/applyforcoaching" element={<ApplyForCoaching />} />
-          
         </Routes>
       </header>
     </div>

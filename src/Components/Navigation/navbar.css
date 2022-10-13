@@ -1,0 +1,25 @@
+.mb-3 {
+    background-color: #FFFFFF !important;
+    width: 100%
+}
+.navtitles {
+    color: #CA8B69 !important;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px !important;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.offCanvasnav {
+    width: 66% !important;
+}
+.nav-links {
+    color: #CA8B69 !important;
+    font-size: 24px !important;
+    margin-left: 20px;
+}
+

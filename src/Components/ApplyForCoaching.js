@@ -28,7 +28,7 @@ const ApplyForCoaching = () => {
   };
 
   return (
-    <div id="apply for coaching">
+    <div id="applyforcoaching">
       <form ref={form} onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" value={contact_number} />
         <label>Name</label>

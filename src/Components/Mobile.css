@@ -3,22 +3,70 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* landing page css */
 .landingimg {
     width: 100%;
     height: 80vh;
     object-fit: cover;
     margin-top: 80px;
 }
-.container {
+.imagecontainer {
   position: relative;
+  padding: 0px !important;
 }
 .quotecontainer {
   position: absolute;
   margin-top: auto;
   margin-bottom: auto;
-  top: 90%;
-  bottom: 0;
+  top: 20%;
   right: 15%;
   color: white;
   text-align: center;
+  font-size: 26px;
+}
+
+.introContainer {
+  background-color: #CA8B69;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.importanttext {
+  font-size: 24px;
+}
+
+.specialtext {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.getStartedContainer {
+  display: flex;
+  flex-direction: column;
+}
+.pinkimportanttext {
+  color: #CA8B69;
+  margin: 10px auto;
+  font-weight: 500;
+  font-size: 24px;
+}
+.pinkbutton {
+  background-color: #FFFFFF;
+  color: #CA8b69;
+  border-radius: 6px;
+  border-color: #CA8B69;
+  width: 250px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px auto;
+}
+
+.pagelinks {
+  text-decoration: none;
+  color: #CA8b69;
+}
+
+#applyforcoaching {
+  margin-top: 70px;
 }
